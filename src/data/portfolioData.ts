@@ -4,17 +4,17 @@ export const PERSONAL_INFO = {
   name: 'Glaydson de Araujo Lisboa',
   shortName: 'Glaydson',
   heroTitle: 'Olá, eu sou o Glaydson',
-  role: 'Estudante de Cyber Security e Inteligência Artificial',
-  headline: 'Construindo soluções práticas na interseção entre Segurança da Informação, Inteligência Artificial e Desenvolvimento de Software.',
-  bio: 'Sou estudante da área de tecnologia, interessado em Inteligência Artificial, Cyber Security e programação. Tenho buscado desenvolver meus conhecimentos por meio de cursos, estudos práticos e criação de projetos, sempre procurando entender como a tecnologia pode ser aplicada para resolver problemas reais.',
+  role: 'Estudante de Cyber Security | Python & Inteligência Artificial',
+  headline: 'Construindo minha base em Segurança Cibernética e explorando Python e Inteligência Artificial por meio de estudos e projetos práticos.',
+  bio: 'Sou estudante de tecnologia com foco em Cyber Security e interesse em Inteligência Artificial. Aprendo por meio de cursos, estudos práticos e projetos, enquanto desenvolvo meus conhecimentos em Python e exploro como IA e automação podem apoiar a segurança da informação.',
   email: 'glaydsonaraujo25@gmail.com',
   whatsapp: 'https://wa.me/5561981461481?text=Ol%C3%A1%2C%20Glaydson!%20Vim%20pelo%20seu%20portf%C3%B3lio.',
   whatsappFormatted: '+55 (61) 98146-1481',
-  github: 'https://github.com',
+  github: 'https://github.com/glaydsonaraujo25-cloud',
   linkedin: 'https://linkedin.com',
   location: 'Brasil',
   status: 'Disponível para estágios e projetos',
-  currentFocus: 'Cyber Security, IA Generativa, RAG, Python & Prompt Engineering',
+  currentFocus: 'Cyber Security, fundamentos de Python, IA Generativa e Prompt Engineering',
 };
 
 export const ABOUT_QUESTIONS = [
@@ -22,59 +22,88 @@ export const ABOUT_QUESTIONS = [
     id: 'quem-sou',
     question: 'Quem sou?',
     tag: 'Perfil & Trajetória',
-    answer: 'Sou estudante da área de tecnologia, interessado em Inteligência Artificial, Cyber Security e programação. Tenho buscado desenvolver meus conhecimentos por meio de cursos, estudos práticos e criação de projetos, sempre procurando entender como a tecnologia pode ser aplicada para resolver problemas reais.',
-    highlight: 'Foco em aprendizado contínuo e resolução metódica de problemas.'
+    answer: 'Sou estudante de tecnologia com foco em Cyber Security e interesse em Inteligência Artificial. Gosto de aprender na prática, transformando os conteúdos estudados em exercícios e projetos que me ajudam a desenvolver experiência.',
+    highlight: 'Aprendizado contínuo, curiosidade e prática.'
   },
   {
     id: 'o-que-estudo',
     question: 'O que estou estudando?',
     tag: 'Foco Técnico Atual',
-    answer: 'Atualmente, estou estudando Cyber Security, Inteligência Artificial, Python e Engenharia de Prompts. Também estou aprofundando meus conhecimentos em conceitos como IA Generativa, LLMs, RAG, automação e desenvolvimento de aplicações utilizando IA.',
-    highlight: 'Fundamentos sólidos de algoritmos, redes, arquitetura de LLMs e segurança.'
+    answer: 'Atualmente estudo Cyber Security, fundamentos de Python, Inteligência Artificial e Engenharia de Prompts. Também estou conhecendo conceitos de IA Generativa, LLMs, RAG e automação, sempre buscando entender suas aplicações de forma prática.',
+    highlight: 'Construindo fundamentos antes de avançar para temas mais complexos.'
   },
   {
     id: 'areas-interesse',
     question: 'Quais áreas me interessam?',
-    tag: 'Áreas de Especialização',
-    answer: 'Tenho interesse principalmente em Cyber Security e Inteligência Artificial, especialmente na aplicação de IA para segurança da informação. Também tenho interesse em programação, automação, desenvolvimento de ferramentas e análise de incidentes de segurança.',
-    highlight: 'Convergência entre defesa cibernética ativa e modelos inteligentes.'
+    tag: 'Áreas de Interesse',
+    answer: 'Tenho maior interesse em segurança defensiva, análise de incidentes e SOC. Também me interessa entender como Inteligência Artificial e automação podem apoiar atividades de segurança e análise.',
+    highlight: 'Interesse em defesa cibernética e IA aplicada à segurança.'
   },
   {
     id: 'objetivos',
     question: 'Quais são meus objetivos profissionais?',
-    tag: 'Visão de Futuro',
-    answer: 'Meu objetivo é construir uma carreira na área de tecnologia, desenvolvendo experiência principalmente em Cyber Security e Inteligência Artificial. Quero transformar meus conhecimentos em projetos práticos, continuar evoluindo tecnicamente e, futuramente, atuar profissionalmente no desenvolvimento de soluções que unam segurança e inteligência artificial.',
-    highlight: 'Evolução técnica contínua e contribuição em projetos de alto impacto.'
+    tag: 'Objetivos',
+    answer: 'Meu objetivo é conquistar minha primeira oportunidade profissional em tecnologia, especialmente em Cyber Security, e evoluir por meio de experiência prática, projetos e aprendizado contínuo.',
+    highlight: 'Preparação para oportunidades de estágio e nível júnior.'
   }
 ];
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
+    id: 'security',
+    name: 'Cyber Security',
+    iconName: 'Shield',
+    description: 'Conhecimentos em desenvolvimento por meio de estudos de segurança defensiva e fundamentos de segurança da informação.',
+    skills: [
+      {
+        name: 'Fundamentos de Segurança',
+        badge: 'Em Estudo',
+        focus: 'Princípios de confidencialidade, integridade e disponibilidade, autenticação, controle de acesso e boas práticas de proteção.',
+        practicalApplication: 'Análise de cenários e exercícios voltados à identificação de riscos e aplicação de medidas defensivas.',
+        topics: ['CIA Triad', 'Autenticação', 'Controle de Acesso', 'Boas Práticas']
+      },
+      {
+        name: 'Análise de Ameaças',
+        badge: 'Em Desenvolvimento',
+        focus: 'Estudo de phishing, malware, spyware, backdoors, engenharia social e indicadores básicos de comprometimento.',
+        practicalApplication: 'Classificação de incidentes simulados e identificação de sinais comuns de ataques.',
+        topics: ['Phishing', 'Malware', 'Engenharia Social', 'IOCs']
+      },
+      {
+        name: 'Segurança Defensiva & SOC',
+        badge: 'Área de Interesse',
+        focus: 'Introdução a monitoramento, resposta a incidentes e rotina de equipes de segurança defensiva.',
+        practicalApplication: 'Estudos de caso e simulações educacionais de triagem e análise de incidentes.',
+        topics: ['SOC', 'Incident Response', 'Triagem', 'Monitoramento']
+      }
+    ]
+  },
+  {
     id: 'ai',
     name: 'Inteligência Artificial',
     iconName: 'Brain',
-    description: 'Estudo e aplicação de engenharia de contexto, modelos generativos e automações com IA.',
+    description: 'Estudo de IA Generativa, Engenharia de Prompts e aplicações de IA em problemas práticos.',
     skills: [
       {
         name: 'Prompt Engineering',
         badge: 'Prática Contínua',
-        focus: 'Construção de prompts estruturados, Few-Shot, Chain-of-Thought e System Instructions defensivas.',
-        practicalApplication: 'Otimização de respostas de modelos, redução de alucinações e padronização de saídas.',
-        topics: ['System Prompts', 'Few-Shot Learning', 'Chain-of-Thought', 'Restrições & Formatação JSON']
+        focus: 'Criação e melhoria de prompts estruturados, definição de contexto, exemplos e formatos de saída.',
+        practicalApplication: 'Criação de instruções para obter respostas mais claras, consistentes e adequadas a diferentes tarefas.',
+        topics: ['Contexto', 'Few-Shot', 'System Instructions', 'Saídas Estruturadas']
       },
       {
-        name: 'IA Generativa & RAG',
-        badge: 'Em Aprofundamento',
-        focus: 'Conceitos de Retrieval-Augmented Generation, busca semântica e ancoragem de conhecimento.',
-        practicalApplication: 'Desenvolvimento de protótipos de assistentes que consultam documentações técnicas específicas.',
-        topics: ['RAG Architecture', 'Vector Search', 'Chunking de Documentos', 'Grounded Responses']
+        name: 'IA Generativa & LLMs',
+        badge: 'Em Estudo',
+        focus: 'Fundamentos de modelos de linguagem, tokens, IA Generativa e conceitos introdutórios de RAG.',
+        practicalApplication: 'Exploração de ferramentas de IA e criação de protótipos para estudo e automação de tarefas.',
+        topics: ['LLMs', 'Tokens', 'IA Generativa', 'Introdução a RAG']
       },
       {
-        name: 'Automação com IA',
-        badge: 'Projetos Práticos',
-        focus: 'Criação de scripts para automação de tarefas repetitivas integrando modelos de IA.',
-        practicalApplication: 'Triagem de dados, sumarização automática de relatórios técnicos e pipelines.',
-        topics: ['Pipelines Python', 'Integração de APIs', 'Processamento de Texto', 'Workflows']
+        name: 'IA aplicada à Segurança',
+        badge: 'Área de Interesse',
+        focus: 'Exploração de como modelos de IA podem auxiliar análise, organização de informações e atividades defensivas.',
+        practicalApplication: 'Estudos e protótipos educacionais voltados à análise de incidentes e apoio a tarefas de segurança.',
+        topics: ['Análise Assistida', 'Automação', 'Segurança de IA', 'Casos de Uso']
       }
     ]
   }
@@ -85,45 +114,45 @@ export const PROJECTS: Project[] = [];
 export const LEARNING_TIMELINE: TimelineMilestone[] = [
   {
     year: '2026',
-    title: 'Especialização em Cyber Security & Inteligência Artificial',
+    title: 'Construção de Fundamentos em Cyber Security & IA',
     status: 'em_andamento',
     badge: 'Momento Atual',
-    summary: 'Aprofundamento intensivo em segurança defensiva, modelos de linguagem e desenvolvimento prático de projetos.',
+    summary: 'Desenvolvimento gradual de conhecimentos em segurança cibernética, Inteligência Artificial e fundamentos de Python.',
     items: [
-      'Estudo dedicado de Cyber Security, análise de incidentes e princípios de defesa de sistemas',
-      'Aprofundamento em Inteligência Artificial, LLMs, IA Generativa e arquiteturas RAG',
-      'Domínio de Engenharia de Prompts (Few-shot, CoT, System Prompts e Guardrails de Segurança)',
-      'Desenvolvendo meus conhecimentos em Python e explorando suas aplicações em automação, Inteligência Artificial e Cyber Security.'
+      'Estudo de fundamentos de Cyber Security, segurança da informação e ameaças digitais',
+      'Aprendizado sobre phishing, malware, autenticação, resposta a incidentes e segurança defensiva',
+      'Estudo e prática de Inteligência Artificial, IA Generativa e Engenharia de Prompts',
+      'Aprendizado dos fundamentos de Python e exploração futura de aplicações em automação e segurança'
     ]
   },
   {
-    year: 'Próximos Objetivos',
-    title: 'Evolução Técnica & Atuação Profissional',
+    year: 'Próximos Passos',
+    title: 'Projetos Práticos & Primeira Oportunidade',
     status: 'proximo_passo',
-    badge: 'Metas Futuras',
-    summary: 'Consolidação de experiência prática no mercado e criação de soluções robustas que unam IA e segurança.',
+    badge: 'Metas',
+    summary: 'Transformar o aprendizado em projetos demonstráveis e construir experiência para ingressar profissionalmente em Cyber Security.',
     items: [
-      'Aprofundar conhecimentos avançados em Cyber Security e segurança aplicada a sistemas de IA',
-      'Desenvolver projetos práticos mais complexos e de código aberto para a comunidade técnica',
-      'Conquistar as primeiras oportunidades profissionais (estágio / júnior) na área de tecnologia',
-      'Contribuir ativamente no desenvolvimento de soluções seguras, eficientes e inteligentes'
+      'Desenvolver projetos educacionais de segurança defensiva e análise de incidentes',
+      'Evoluir gradualmente em Python e aplicar o aprendizado em pequenos projetos',
+      'Aprofundar conhecimentos em SOC, redes e resposta a incidentes',
+      'Buscar oportunidades de estágio ou nível júnior em Cyber Security'
     ]
   }
 ];
 
 export const EDUCATION_DATA: EducationItem[] = [
   {
-    institution: 'Ensino Superior em Tecnologia',
-    course: 'Graduação / Formação na Área de Tecnologia (Cyber Security & IA)',
-    level: 'Ensino Superior',
+    institution: 'Ensino Superior em andamento',
+    course: 'Cyber Security',
+    level: 'Graduação',
     status: 'Em andamento',
-    period: '2026 - Presente',
+    period: 'Em andamento',
     focusAreas: [
-      'Fundamentos de Computação e Redes',
-      'Segurança da Informação e Criptografia',
-      'Algoritmos e Estruturas de Dados',
-      'Inteligência Artificial e Aprendizado de Máquina'
+      'Fundamentos de Computação',
+      'Redes de Computadores',
+      'Segurança da Informação',
+      'Cyber Security'
     ],
-    description: 'Desenvolvimento de base acadêmica sólida em computação, segurança de sistemas e novas tecnologias emergentes.'
+    description: 'Formação voltada ao desenvolvimento de conhecimentos em tecnologia e segurança cibernética, complementada por estudos práticos em Inteligência Artificial e fundamentos de Python.'
   }
 ];
