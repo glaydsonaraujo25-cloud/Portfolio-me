@@ -20,6 +20,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
 
   const navItems = [
     { label: 'Sobre Mim', href: '#sobre-mim', id: 'sobre-mim' },
+    { label: 'Projetos', href: '#projetos', id: 'projetos' },
     { label: 'Habilidades', href: '#habilidades', id: 'habilidades' },
     { label: 'Jornada', href: '#jornada', id: 'jornada' },
     { label: 'Formação', href: '#formacao', id: 'formacao' },
@@ -37,7 +38,6 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo / Brand */}
           <a
             href="#hero"
             id="header-logo-link"
@@ -51,13 +51,10 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
                 {PERSONAL_INFO.shortName}
                 <span className="w-1.5 h-1.5 rounded-full bg-[#22D3EE] animate-pulse"></span>
               </span>
-              <span className="text-[11px] text-[#A7B0C0] font-mono tracking-wider">
-                CYBER & AI
-              </span>
+              <span className="text-[11px] text-[#A7B0C0] font-mono tracking-wider">CYBER & AI</span>
             </div>
           </a>
 
-          {/* Desktop Navigation Links */}
           <nav id="desktop-nav" className="hidden lg:flex items-center gap-1 bg-[#121A2F]/80 border border-[#1E293B] px-3 py-1.5 rounded-full">
             {navItems.map((item) => {
               const isActive = activeSection === item.id;
@@ -78,7 +75,6 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
             })}
           </nav>
 
-          {/* Right Action Button & Availability Indicator */}
           <div className="hidden sm:flex items-center gap-3">
             <div className="hidden xl:flex items-center gap-2 px-3 py-1 bg-[#121A2F] border border-[#1E293B] rounded-full text-[11px] text-[#A7B0C0]">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -95,7 +91,6 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
             </a>
           </div>
 
-          {/* Mobile Menu Toggle Button */}
           <button
             id="mobile-menu-toggle"
             type="button"
@@ -108,7 +103,6 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
         <div
           id="mobile-menu"
@@ -135,9 +129,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
                 }`}
               >
                 <span>{item.label}</span>
-                {item.id === 'ia-na-pratica' && (
-                  <Sparkles className="w-3.5 h-3.5 text-[#22D3EE]" />
-                )}
+                {item.id === 'projetos' && <Sparkles className="w-3.5 h-3.5 text-[#22D3EE]" />}
               </a>
             ))}
           </div>
