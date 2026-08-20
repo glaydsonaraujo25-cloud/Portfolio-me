@@ -13,10 +13,15 @@
     --font-display: 'Space Grotesk', sans-serif;
   }
 
+  html {
+    scroll-padding-top: 88px;
+  }
+
   body {
     background-color: #0B1020;
     color: #F5F7FA;
     font-family: var(--font-main);
+    text-rendering: optimizeLegibility;
   }
 
   h1, h2, h3, h4, .font-heading {
@@ -26,9 +31,13 @@
   code, pre, .font-mono {
     font-family: 'JetBrains Mono', monospace;
   }
+
+  :focus-visible {
+    outline: 2px solid var(--cyan-accent);
+    outline-offset: 3px;
+  }
 }
 
-/* Bento Theme specific utilities */
 .bento-card {
   background: var(--card-bg);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -78,7 +87,6 @@
   z-index: 0;
 }
 
-/* Custom subtle scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -93,3 +101,17 @@
   background: #334155;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
