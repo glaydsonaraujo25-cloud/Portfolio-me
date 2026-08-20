@@ -109,7 +109,53 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   }
 ];
 
-export const PROJECTS: Project[] = [];
+export const PROJECTS: Project[] = [
+  {
+    id: 'soc-sentinel-l2',
+    title: 'SOC Sentinel L2',
+    subtitle: 'Incident Response & Threat Analysis Studio',
+    category: 'security',
+    categoryLabel: 'Cyber Security / SOC',
+    description: 'Laboratório web de operações SOC e resposta a incidentes com análise assistida por IA, evidências, MITRE ATT&CK, Threat Intelligence, playbooks e gerenciamento de casos.',
+    longDescription: 'Projeto educacional que simula um ambiente de análise de incidentes de nível SOC L2, combinando IA com fluxos defensivos e organização estruturada de evidências.',
+    architecture: ['React no frontend', 'API serverless', 'Google Gemini', 'Supabase opcional', 'Integrações de Threat Intelligence'],
+    features: ['Risk e Confidence Score', 'Extração de IOCs', 'MITRE ATT&CK', 'Playbooks', 'Case Management', 'Dashboard SOC'],
+    techStack: ['React', 'TypeScript', 'Gemini', 'Supabase', 'Vercel'],
+    status: 'Protótipo Funcional',
+    githubUrl: 'https://github.com/glaydsonaraujo25-cloud/SOC-Sentinel-L2---Incident-Response-Analysis-Studio',
+    practicalSecurityOrAIImpact: 'Simula etapas de triagem e resposta a incidentes, ajudando a praticar análise estruturada, correlação de evidências e tomada de decisão defensiva assistida por IA.'
+  },
+  {
+    id: 'analisador-soc-phishing',
+    title: 'Analisador SOC Phishing',
+    subtitle: 'Triagem de phishing e engenharia social com IA',
+    category: 'security',
+    categoryLabel: 'Cyber Security / Phishing',
+    description: 'Plataforma educativa para análise defensiva de phishing com classificação de risco, extração de indicadores, mapeamento MITRE ATT&CK e playbook de resposta.',
+    longDescription: 'Ferramenta voltada ao treinamento de triagem de mensagens suspeitas e engenharia social, utilizando IA para apoiar a classificação e organização das evidências.',
+    architecture: ['React', 'Backend Express', 'Google Gemini', 'Análise local de URLs e evidências'],
+    features: ['Phishing Risk Score', 'Case ID', 'Extração de IOCs', 'MITRE ATT&CK', 'Histórico', 'Parecer técnico'],
+    techStack: ['React', 'TypeScript', 'Express', 'Gemini', 'Tailwind CSS'],
+    status: 'Protótipo Funcional',
+    githubUrl: 'https://github.com/glaydsonaraujo25-cloud/Analisador-SOC-Phishing',
+    practicalSecurityOrAIImpact: 'Reúne conceitos de phishing, engenharia social, indicadores de comprometimento e fluxo SOC em uma experiência prática de análise defensiva.'
+  },
+  {
+    id: 'mailflow-ai',
+    title: 'MailFlow AI',
+    subtitle: 'Automatizador Inteligente de E-mails',
+    category: 'automation',
+    categoryLabel: 'IA / Automação',
+    description: 'Plataforma inteligente para criação, resposta, resumo, classificação, melhoria e análise de segurança de e-mails com Inteligência Artificial.',
+    longDescription: 'Projeto criado para explorar aplicações práticas de IA no fluxo de comunicação por e-mail, reunindo produtividade, organização e análise assistida.',
+    architecture: ['Interface web', 'Backend', 'Integração com Google Gemini', 'Processamento de conteúdo de e-mails'],
+    features: ['Criação de e-mails', 'Respostas assistidas', 'Resumo', 'Classificação', 'Melhoria de texto', 'Análise de segurança'],
+    techStack: ['React', 'TypeScript', 'Gemini', 'Vite', 'Express'],
+    status: 'Protótipo Funcional',
+    githubUrl: 'https://github.com/glaydsonaraujo25-cloud/MailFlow-AI',
+    practicalSecurityOrAIImpact: 'Demonstra o uso de IA para automatizar e organizar tarefas de e-mail, incluindo apoio à análise de conteúdo e identificação de possíveis sinais de risco.'
+  }
+];
 
 export const LEARNING_TIMELINE: TimelineMilestone[] = [
   {
