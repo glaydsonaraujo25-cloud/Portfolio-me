@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, ArrowRight, Check, Copy } from 'lucide-react';
+import { Shield, ArrowRight, Check, Copy, FolderKanban } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { HeroVisual } from './HeroVisual';
 
@@ -40,15 +40,20 @@ export const Hero: React.FC = () => {
                 </p>
               </div>
               <p className="text-[#A7B0C0] text-sm sm:text-base leading-relaxed max-w-xl">
-                Estudo <strong className="text-[#F5F7FA]">Segurança Cibernética</strong> e estou desenvolvendo meus conhecimentos em <strong className="text-[#F5F7FA]">Python</strong>, enquanto exploro aplicações de <strong className="text-[#F5F7FA]">Inteligência Artificial</strong> e automação na criação de soluções práticas.
+                Estudo <strong className="text-[#F5F7FA]">Segurança Cibernética</strong> e desenvolvo projetos práticos com foco em <strong className="text-[#F5F7FA]">SOC, análise defensiva e Inteligência Artificial</strong>, enquanto avanço nos fundamentos de <strong className="text-[#F5F7FA]">Python</strong>.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
                 {bentoTags.map((tag, idx) => <span key={idx} className="bento-tag font-mono">{tag}</span>)}
               </div>
             </div>
-            <div className="relative z-10 pt-6 mt-6 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
-              <a href="#contato" id="hero-cta-contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#3B82F6] hover:bg-[#2563EB] text-white text-xs sm:text-sm font-semibold transition-all shadow-md shadow-blue-500/20">
-                <span>Entrar em Contato</span><ArrowRight className="w-4 h-4" />
+            <div className="relative z-10 pt-6 mt-6 border-t border-white/5 flex flex-wrap items-center gap-3">
+              <a href="#projetos" id="hero-cta-projects" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#3B82F6] hover:bg-[#2563EB] text-white text-xs sm:text-sm font-semibold transition-all shadow-md shadow-blue-500/20">
+                <FolderKanban className="w-4 h-4" />
+                <span>Ver projetos</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <a href="#contato" id="hero-cta-contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0B1020]/70 hover:bg-[#1E293B] border border-white/10 text-[#F5F7FA] text-xs sm:text-sm font-semibold transition-all">
+                <span>Entrar em contato</span>
               </a>
               <button type="button" id="hero-copy-email" onClick={handleCopyEmail} className="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-[#0B1020]/70 hover:bg-[#1E293B] border border-white/10 text-[#A7B0C0] hover:text-[#F5F7FA] text-xs font-mono transition-all" title="Copiar e-mail">
                 {copiedEmail ? <><Check className="w-3.5 h-3.5 text-emerald-400" /><span className="text-emerald-400 font-medium">Copiado!</span></> : <><Copy className="w-3.5 h-3.5" /><span>{PERSONAL_INFO.email}</span></>}
