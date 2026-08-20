@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { AboutMe } from './components/AboutMe';
+import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Timeline } from './components/Timeline';
 import { Education } from './components/Education';
@@ -16,6 +17,7 @@ export default function App() {
       const sections = [
         'hero',
         'sobre-mim',
+        'projetos',
         'habilidades',
         'jornada',
         'formacao',
@@ -43,20 +45,18 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0B1020] text-[#F5F7FA] selection:bg-[#3B82F6] selection:text-white relative">
-      {/* Top Header Navigation */}
       <Header activeSection={activeSection} />
 
-      {/* Main Content Flow */}
       <main id="main-content">
         <Hero />
         <AboutMe />
+        <Projects />
         <Skills />
         <Timeline />
         <Education />
         <Contact />
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );
