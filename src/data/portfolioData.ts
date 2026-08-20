@@ -77,8 +77,33 @@ export const PROJECTS: Project[] = [
 ];
 
 export const LEARNING_TIMELINE: TimelineMilestone[] = [
-  { year: '2026', title: 'Construção de Fundamentos em Cyber Security & IA', status: 'em_andamento', badge: 'Momento Atual', summary: 'Desenvolvimento gradual de conhecimentos em segurança cibernética, Inteligência Artificial e fundamentos de Python.', items: ['Estudo de fundamentos de Cyber Security, segurança da informação e ameaças digitais', 'Aprendizado sobre phishing, malware, autenticação, resposta a incidentes e segurança defensiva', 'Estudo e prática de Inteligência Artificial, IA Generativa e Engenharia de Prompts', 'Aprendizado dos fundamentos de Python e exploração futura de aplicações em automação e segurança'] },
-  { year: 'Próximos Passos', title: 'Projetos Práticos & Primeira Oportunidade', status: 'proximo_passo', badge: 'Metas', summary: 'Transformar o aprendizado em projetos demonstráveis e construir experiência para ingressar profissionalmente em Cyber Security.', items: ['Desenvolver projetos educacionais de segurança defensiva e análise de incidentes', 'Evoluir gradualmente em Python e aplicar o aprendizado em pequenos projetos', 'Aprofundar conhecimentos em SOC, redes e resposta a incidentes', 'Buscar oportunidades de estágio ou nível júnior em Cyber Security'] }
+  {
+    year: '2026',
+    title: 'Fundamentos + Projetos Práticos em Cyber Security & IA',
+    status: 'em_andamento',
+    badge: 'Momento Atual',
+    summary: 'Consolidação dos fundamentos de segurança cibernética enquanto transformo o aprendizado em projetos publicados e experiências práticas.',
+    items: [
+      'Estudo contínuo de Cyber Security, segurança da informação, ameaças digitais e resposta a incidentes',
+      'Criação e publicação do SOC Sentinel L2 para praticar análise de incidentes, IOCs, MITRE ATT&CK e fluxos defensivos',
+      'Criação do Analisador SOC Phishing para praticar triagem de phishing e engenharia social',
+      'Exploração de Inteligência Artificial e Prompt Engineering em projetos como o MailFlow AI',
+      'Aprendizado gradual dos fundamentos de Python com foco futuro em automação e segurança'
+    ]
+  },
+  {
+    year: 'Próximos Passos',
+    title: 'Aprofundamento Técnico & Primeira Oportunidade',
+    status: 'proximo_passo',
+    badge: 'Metas',
+    summary: 'Evoluir os conhecimentos atuais, ampliar a qualidade dos projetos e buscar experiência profissional em segurança cibernética.',
+    items: [
+      'Aprofundar conhecimentos em SOC, redes, monitoramento e resposta a incidentes',
+      'Evoluir em Python e aplicar o aprendizado em pequenos projetos de automação defensiva',
+      'Continuar melhorando os projetos já publicados com documentação, testes e novas funcionalidades',
+      'Buscar oportunidades de estágio ou nível júnior em Cyber Security'
+    ]
+  }
 ];
 
 export const EDUCATION_DATA: EducationItem[] = [
